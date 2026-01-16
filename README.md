@@ -31,7 +31,7 @@ The **core innovation** of this system is **Smart Context Switching**. Unlike st
 - Embeddings: Converts text into vector representations for semantic similarity  
 
 **Database & Storage**  
-- PostgreSQL (Neon DB)  
+- PostgreSQL 
 - pgvector: Extension for storing and querying vector embeddings  
 
 **Frontend**  
@@ -76,16 +76,3 @@ The **core innovation** of this system is **Smart Context Switching**. Unlike st
 3. Click timestamps in answers to jump to specific points in the video.  
 4. Ask questions about different videos; the AI will automatically find and switch to the correct video.  
 
----
-
-## 5. Directory Structure
-
-app/
-├── api/
-│ └── endpoints/
-│ └── chat.py # Smart Context Switching logic
-├── services/
-│ ├── rag_agent.py # LLM communication and prompting
-│ ├── vector_store.py # Database search and indexing
-│ └── video_processor.py # Downloading and transcription
-└── main.py # Application entry point
